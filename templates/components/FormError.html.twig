@@ -1,0 +1,17 @@
+<div>
+    {% if formError|length > 0 %}
+
+        <div class="ps-4">
+            <ul class="list-disc">
+
+                {% for error in formError %}
+                    <li class="text-sm leading-6 text-red-600">
+                        {{ error.message }}
+                    </li>
+                {% endfor %}
+
+            </ul>
+        </div>
+
+    {% endif %}
+</div>
