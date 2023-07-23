@@ -1,0 +1,18 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}
+	Hello PostController!
+{% endblock %}
+
+{% block body %}
+
+	<section class="bg-dash rounded">
+		<div class="flex flex-col h-full px-5 py-4">
+
+            {# list posts #}
+            {{ component('Posts') }}
+
+		</div>
+	</section>
+
+{% endblock %}

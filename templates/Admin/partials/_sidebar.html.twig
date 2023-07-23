@@ -1,0 +1,87 @@
+<div class="bg-gray-800 h-screen px-6 pt-10">
+
+    <div class="h-8">
+        <h2 class="text-2xl text-white font-semibold ps-4">
+           📚 Admin
+        </h2>
+    </div>
+
+    <div class="mt-10 ">
+
+        <ul>
+            <li class="">
+                <a href="{{ path('app_dashboard') }}" class="{{ app.current_route == 'app_dashboard'
+                    ? 'bg-gray-900 text-white '
+                    : 'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-base font-medium flex flex-row items-center gap-2">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+                    </svg>
+
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="">
+                <a href="{{ path('admin_post_index') }}" class="{{ app.current_route == 'admin_post_index'
+                    ? 'bg-gray-900 text-white '
+                    : 'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-base font-medium flex flex-row items-center gap-2">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                    </svg>
+
+                    Posts
+                </a>
+            </li>
+
+            <li class="">
+                <a href="{{ path('admin_contact_index') }}" class="{{ app.current_route == 'admin_contact_index'
+                    ? 'bg-gray-900 text-white '
+                    : 'text-gray-300 hover:bg-gray-700 hover:text-white' }} rounded-md px-3 py-2 text-base font-medium flex flex-row items-center gap-2">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                    </svg>
+
+                Contacts
+                </a>
+            </li>
+
+            <li class="">
+                <a href="{{ path('app_home') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium flex flex-row items-center gap-2">
+
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.2875 0.506256H3.7125C2.75625 0.506256 1.96875 1.29376 1.96875 2.25001V15.75C1.96875 16.7063 2.75625 17.5219 3.74063 17.5219H14.3156C15.2719 17.5219 16.0875 16.7344 16.0875 15.75V2.25001C16.0313 1.29376 15.2438 0.506256 14.2875 0.506256ZM14.7656 15.75C14.7656 16.0313 14.5406 16.2563 14.2594 16.2563H3.7125C3.43125 16.2563 3.20625 16.0313 3.20625 15.75V2.25001C3.20625 1.96876 3.43125 1.74376 3.7125 1.74376H14.2875C14.5688 1.74376 14.7938 1.96876 14.7938 2.25001V15.75H14.7656Z" fill="#DEE4EE"/>
+                        <path d="M12.7969 2.61563H9.73123C9.22498 2.61563 8.8031 3.03751 8.8031 3.54376V7.25626C8.8031 7.76251 9.22498 8.18438 9.73123 8.18438H12.7969C13.3031 8.18438 13.725 7.76251 13.725 7.25626V3.51563C13.6969 3.03751 13.3031 2.61563 12.7969 2.61563ZM12.4312 6.89063H10.0687V3.88126H12.4312V6.89063Z" fill="#DEE4EE"/>
+                        <path d="M4.9781 4.35938H7.03123C7.36873 4.35938 7.6781 4.07812 7.6781 3.7125C7.6781 3.34687 7.39685 3.09375 7.03123 3.09375H4.94998C4.61248 3.09375 4.3031 3.375 4.3031 3.74063C4.3031 4.10625 4.61248 4.35938 4.9781 4.35938Z" fill="#DEE4EE"/>
+                        <path d="M4.9781 7.93126H7.03123C7.36873 7.93126 7.6781 7.65001 7.6781 7.28439C7.6781 6.91876 7.39685 6.63751 7.03123 6.63751H4.94998C4.61248 6.63751 4.3031 6.91876 4.3031 7.28439C4.3031 7.65001 4.61248 7.93126 4.9781 7.93126Z" fill="#DEE4EE"/>
+                        <path d="M13.0782 10.2375H4.97817C4.64067 10.2375 4.3313 10.5188 4.3313 10.8844C4.3313 11.25 4.61255 11.5313 4.97817 11.5313H13.0782C13.4157 11.5313 13.7251 11.25 13.7251 10.8844C13.7251 10.5188 13.4157 10.2375 13.0782 10.2375Z" fill="#DEE4EE"/>
+                        <path d="M13.0782 13.8094H4.97817C4.64067 13.8094 4.3313 14.0906 4.3313 14.4563C4.3313 14.8219 4.61255 15.1031 4.97817 15.1031H13.0782C13.4157 15.1031 13.7251 14.8219 13.7251 14.4563C13.7251 14.0906 13.4157 13.8094 13.0782 13.8094Z" fill="#DEE4EE"/>
+                    </svg>
+
+
+                    Site
+                </a>
+            </li>
+
+            <li>
+                <hr>
+            </li>
+
+            <li class="">
+                <a href="{{ path('app_security_logout') }}" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-base font-medium flex flex-row items-center gap-2">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9" />
+                    </svg>
+
+                    Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
